@@ -1,0 +1,1038 @@
+/*--           HOME MODS BY MARK JOSEPH RIVERA - July, 2012                  --*/
+/*-----------------------------------------------------------------------------*/
+
+@import "-/strap.less";
+@import "-/mixin.less";
+
+@topRed: #AA271E;
+@mainYellow: #FBD626;
+
+.wrap { .cols(left); .relative(); width: @maxWidth; margin: 0;
+	&.header { height: 86px; background-color: @topRed;  }
+	&.header2 {	height: 54px; background: url(../images/black_bar.jpg) no-repeat bottom #000;
+		border-bottom: solid 8px #ababab;
+	
+		#goldenCricketLogo{
+			
+		margin: -82px 0 0 70px;
+		float:left;
+		}
+	
+	}
+	&.footer { background: @topRed; height: 100px; }
+	&.home   { background: #fff;  }
+}
+
+header, footer, #main, #topMenu { .relative(); width: @frameSize; margin: auto;}
+header { height: 100px; 
+	#hdr-logo { .cols(left); background: @grayLight; text-align: center; width: 310px; height: 100px; }
+	#hdr-logo:before {line-height: 100px; z-index: 1; }
+}
+
+footer { font-weight: 100; color: #fff; text-align: center; padding: 10px 0; 
+	a { font-weight: 100; }
+	a[copyright] { color: #fff; }
+	a[signature] { font-size: @baseFontSize - 2; color: #fff; }
+	a:hover { border-bottom: solid 1px #FF0; color:#FF0; }
+}
+
+
+@import "-/menu.less";
+@import "-/font.less";
+@import "-/class.less";
+
+
+// CASUAL STYLES CONFIGURATION
+
+a { color: @gray;
+	&:hover { color: @grayLight; }
+	&:focus, &:active { color: @orange; outline: 0; }
+}
+
+
+//## CONTENTS CONFIGURATION ##//
+
+#main{
+	#MainYellowBox {padding: 30px; min-height: 550px;}
+
+	
+	#mainContentBox{
+		margin: 10px 0 20px 300px;
+		border: solid 3px #f9e8b4;
+		border-radius: 30px;
+
+
+		
+		nav[sectionnav]{
+		background: #900;	
+		color: #FFF;
+		border-top-left-radius: 26px;
+		border-top-right-radius: 26px;	
+		
+			
+			ul { list-style: none; line-height: 30px; width: auto; margin:0 0 0 20px;
+	
+				li { 
+					display: inline; 
+					color: #fff; 
+					margin: 0 20px; 
+					font-family: Arial, Helvetica, sans-serif; 
+					font-weight: 100; 
+					font-size: 10px;
+					text-transform: uppercase;
+	
+					a{	color: #FFF	}
+					
+					a:hover,
+					a.on {
+						color: @mainYellow;
+					}
+				}
+			}
+			
+
+		} /* END nav[sectionnav] */
+		
+		
+		
+
+		#mainContent{
+			padding: 30px 20px;
+			
+			
+			p{
+			margin: 10px 0;	
+			}
+			
+			
+			
+			.postJackpotRight{
+				width: 400px;
+				text-align:left;
+				float:right;
+				height: 40px;
+				
+				input[type="text"], input[type="password"]{
+					width:300px;
+					background: #eee;
+					color: #000;
+					height: 20px;
+					font-size:14px;
+				}
+				
+				input[type="checkbox"]{
+					margin: 2px 8px 6px 8px;
+					
+				}
+				
+				input[type="submit"]:hover{
+					color:@mainYellow !important;	
+					box-shadow: 0 0 10px rgba(255, 214, 38, 1);
+					-webkit-box-shadow: 0 0 10px rgba(255, 214, 38, 1); 
+					-moz-box-shadow: 0 0 10px rgba(255, 214, 38, 1); 
+				}
+				
+				input[type="submit"].yellowButton:hover{
+					box-shadow: 0 0 10px @topRed;
+					color: @topRed !important;
+				}
+				
+				input:focus{
+					border: 2px @topRed solid;
+					
+				}
+				
+			 }
+			
+			
+			.postJackpotLeft{
+				width: 200px;
+				text-align:right;
+				height: 40px;
+				padding-top:6px;
+			}
+			
+			
+			#postHistoryArea,
+			#postWhatsHappening{
+				
+			  ul:nth-child(even){
+				background:#f5f5f5;  
+			  }
+				
+			  ul{
+			  margin: 0px;	
+			  padding: 5px;
+			   
+			   li{
+				 display:inline-block;	
+				 padding:5px 0;	
+				 vertical-align:top;
+			   }
+				li.postDate,
+				li.username{
+					width: 140px;
+				}	
+				li.postCasino{
+					width: 340px;
+				}	
+				li.postAmount{
+					width: 120px;
+				}
+				li.postName{
+					width: 340px;					
+				}
+				li.margin144{
+					margin-left: 144px;					
+				}
+	
+				li.postNumber{
+					width: 120px;
+				}	
+				
+				
+				li.postComment{
+					margin-left: 144px;				
+				}
+
+			 }
+			}
+			 
+			 
+			 .gallery {
+
+					 margin: 0px;
+					 list-style:none;
+					 
+			 
+				 li{
+					 float:left;
+					 width: 285px;
+					 margin: 13px;
+					 display: inline-block;
+					 text-align: center;
+					 
+					 
+					 img{
+						border: 4px solid #aaa; 
+					 }
+					 
+					 img:hover{
+						border: 4px solid @mainYellow; 						 
+					 }
+					 
+					 a:hover{
+						color: @topRed; 
+					 }
+					 
+				  }
+
+
+			 
+			   }
+			
+			 #calendar{
+				margin-top:20px; 
+			 }
+			 
+			 #calendarControl{
+			 font-size: 11px; 
+			 float:right;
+			 margin-top:8px;
+			 word-spacing: 5px;
+
+			 	a{  color: #999;}
+			 	a.eventSelected{
+					color: #000;	
+				}
+			 
+		 
+			 	input[type=submit]{
+					padding: 0 5px;
+					color: #000;
+					font-size: 11px;
+					padding: 4px;
+					background:none;
+					border: solid 1px #CCC;	
+					border-radius: 6px;
+					text-transform:none;
+					
+				}
+			 
+			 }
+			
+			
+			
+			.yearNav{
+				
+				ul {
+				margin: 15px 0 0 8px;
+				color: #888;
+				font-size: 14px;
+				
+					li{
+					display: inline;
+					
+						a:hover,
+						a.selected{
+							color: #900;
+						}
+					
+					}
+					li:after{
+					content: " | ";
+					margin: 0 6px;
+					}
+					li:last-child:after {
+   					content: "";
+					}
+				}
+				
+			}
+	
+	
+			#jackpotInfoArea{
+				font-size: 14px;
+				margin: 20px 0;
+				color: #555;
+
+				
+			  ul{
+			  margin: 5px;	
+			   
+			   li{
+				 display:inline-block;	
+				 padding:5px 0;	
+				 vertical-align:top;
+	   
+			   }
+				li.jackpotInfoDate{
+					width: 140px;
+				}
+				li.jackpotInfoAmount{
+					width: 100px;
+				}
+				li.jackpotInfoName{
+					width: 260px;
+				}
+				li.jackpotInfoNumber{
+					width: 100px;
+					margin-left:10px;
+				}
+			   }
+			}
+			  
+			#eventList{
+				font-size: px;
+				line-height: 16px;
+				margin: 20px 0;
+				color: #555;
+
+				.eventListHeader{
+					border-bottom: solid 2px #000000;
+					font-weight: bold;  
+					line-height:0;
+					margin-top: 10px;
+				}				
+			    
+				ul{
+			    margin: 5px 0 5px 5px;	
+			  
+				  li{
+					 display:inline-block;	
+					 padding:5px 0;	
+					 vertical-align:top;
+		   
+				   }
+					li.eventListDate{
+						width: 140px;
+					}
+					li.eventListTime{
+						width: 100px;
+					}
+					li.eventListEvent{
+						width: 300px;
+					}
+					
+			
+					
+					li.eventListImageAdmin{
+						width: 60px;
+					}
+					
+					li.eventListShare{
+					 width: 65px;
+					 margin-left: 5px;
+						a{
+							background: #b42720;
+							border-radius: 6px;
+							color: #fff; 	
+							padding: 5px 10px;
+							text-transform: uppercase;
+						}
+						a:hover{
+							color:@mainYellow;	
+							box-shadow: 0 0 10px rgba(255, 214, 38, 1);
+							-webkit-box-shadow: 0 0 10px rgba(255, 214, 38, 1); 
+							-moz-box-shadow: 0 0 10px rgba(255, 214, 38, 1); 							
+						}
+					}
+				 }
+ 
+			}
+			
+			
+		   .slotInfo  {
+		  
+			  ul{
+				margin:0;				  
+				  
+				li{
+				  padding: 8px;
+				  margin:8px;
+				  list-style:none;
+				  text-align:left;
+				  border-bottom: solid 1px #333333;
+				  
+				 a{
+				  
+					  img{
+						float:left;  
+					  }
+					  
+					  .slotDetails{
+						margin: 2px 0 0 100px;  
+						font-size: 16px;
+						line-height: 20px;
+					  }
+			      }
+				  a:hover{
+					  text-decoration:underline;
+					  color: #000;
+						img{
+						 box-shadow: 0 0 16px rgba(255, 214, 38, 1);
+						 -webkit-box-shadow: 0 0 16px rgba(255, 214, 38, 1); 
+						 -moz-box-shadow: 0 0 16px rgba(255, 214, 38, 1); 	
+					  }
+				  }
+				 }
+			    }
+		
+			}	
+			
+			
+			
+			
+			
+		} /* END mainContent */
+		
+		
+		.dashboardGallery{
+			background:#f1f1f1;
+			box-shadow: 0 5px 3px -2px #CCC;
+
+			
+
+			margin:0;	
+
+			
+			
+			ul{
+				margin:0 5px 10px 12px;
+				padding:0;
+			
+			
+				li{
+					 text-align:center;
+					 width: 116px;
+					 display: inline-block;
+					 margin:5px;
+					 list-style: none;
+					
+					
+					.deleteButton{
+					float:right;
+					}
+					input{
+					text-align:center;	
+					}
+					
+				}
+				
+			}
+			
+			
+
+		}
+		
+		.searchCasino{
+			font-size: 14px;
+			line-height: 20px;
+			
+			
+			.searchResults{
+			border-bottom:dotted 2px #666666;
+			margin-bottom:10px;	
+			padding-bottom:5px;
+			}
+			
+			.searchPagination{
+			float:right;	
+			}
+			
+			 ul{
+				 list-style:none;
+				 margin:0;
+				 
+				 border-bottom: dotted 2px #999;
+				height: 100px;
+				 
+				 
+			  li{
+				float:left;  
+			  }
+			  
+			  li.searchCasinoNumber{
+				  width: 20px;				  
+			  }
+			  li.searchCasinoPicture{
+				  width: 120px;
+				  
+				  img{
+					border: solid 1px #CCCCCC;  
+				  }
+				  
+				  a img:hover{
+					box-shadow: 0 0 2px rgba(255, 0, 0, 1);
+					-webkit-box-shadow: 0 0 2px rgba(255, 0, 0, 1); 
+					-moz-box-shadow: 0 0 2px rgba(255, 0, 0, 1); 
+				  }
+			  }
+			  li.searchCasinoInformation{
+				width: 490px;   
+				padding-top: 11px;
+				
+				
+				ul{
+				height:auto;					
+					border-bottom: 0px;
+					
+				 li{
+					 float:none;
+				 }
+
+				 li.searchCasinoTitle{
+					padding:0;	
+					height: 22px;	
+					overflow: hidden;			 
+				 }
+				 
+				 li.searchCasinoTitle a{
+					font-family:Georgia, "Times New Roman", Times, serif;
+					font-size: 22px;
+					color: #aa271e;
+
+				 }
+				 li.searchCasinoTitle a:hover{
+					text-decoration: underline;
+				 }
+				 
+				 li.searchCasinoDescription{
+					 padding-top: 4px;
+					 height: 40px;
+					 overflow: hidden;
+				 }
+				 
+				 
+				 li.searchCasinoLinks{
+					float:left;
+					display: inline;
+					padding:0;
+					
+						a{
+							
+						}
+						
+						a:hover{
+							color: #900;
+							text-decoration:underline;
+						}
+					
+					ul{
+						
+						height:auto;
+						
+					    li{
+						display:inline;
+					    }					
+						li:after{
+						content: " | ";
+						margin: 0 12px;
+						}
+						li:last-child:after {
+						content: "";
+						}	
+
+					}
+				 }
+					
+				}
+				  
+			  }
+			  
+			 }
+		 } /* END searchCasino */
+
+
+			#homeJackpotInfo{
+				font-size: 12px;
+				line-height: 16px;
+				width: 320px;
+				float:left;
+				padding: 10px 0 10px 10px;
+				color: #666;
+				
+				h3 {
+					color:#000;
+				}
+				
+				ul{
+			    margin: 5px 0 5px 5px;	
+			  
+				    li{
+					 display:inline-block;	
+					 padding: 5px 0;	
+					 vertical-align:top;
+		   
+				    }
+					li.homeJackpotAmount{
+						width: 70px;
+					}
+					li.homeJackpotName{
+						width: 150px;
+					}
+					li.homeJackpotNumber{
+						width: 70px;
+					}
+				}
+			}
+			
+			#homeEventInfo{
+				font-size: 12px;
+				line-height: 16px;
+				width:320px;	
+				float:right;	
+				padding: 10px 10px 10px 0;	
+				color: #666;
+				
+				img{
+					float:right;	
+					margin: 6px 46px 0 0;
+				}
+				
+				h3 {
+					color:#000;
+				}
+				
+				ul{
+			    margin: 5px 0 5px 5px;	
+			  
+				    li{
+					 display:inline-block;	
+					 padding: 5px 0;	
+					 vertical-align:top;
+		   
+				    }
+					li.homeEventDate{
+						width: 80px;
+					}
+					li.homeEventTime{
+						width: 55px;
+					}
+					li.homeEventName{
+						width: 155px;
+					}
+				}						
+			}
+		
+	}
+	
+
+
+	.subPage{
+		
+		h2{
+			padding-left:8px;
+			border-bottom: solid 2px #c1615a;
+			font-size: 16px;
+		}
+		
+	}
+
+	
+	.goldTop{
+		
+	 margin-top:40px !important;
+	 min-height: 600px;
+	 		
+		p{
+
+		font-size: 16px;
+		line-height: 26px;	
+		}
+		
+		h2{
+			font-size: 16px;
+			font-style:italic;
+		}
+		
+		ul li{
+		padding-top: 16px;	
+		}
+
+			h1.title{
+			text-align:center;
+			border-radius: 6px;
+			border: solid 2px #f0c948;
+			font-size: 18px;
+			padding: 0 5px;
+			background:#FFFF00;
+			margin: -20px 0 0 20px;
+			width: 450px;
+		
+			background: #fecd1f; /* Old browsers */
+
+			/* IE9 SVG, needs conditional override of 'filter' to 'none' */
+			
+			background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZlY2QxZiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjUxJSIgc3RvcC1jb2xvcj0iI2Y5ZWQzMiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9Ijk5JSIgc3RvcC1jb2xvcj0iI2ZlY2QxZiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgPC9saW5lYXJHcmFkaWVudD4KICA8cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMSIgaGVpZ2h0PSIxIiBmaWxsPSJ1cmwoI2dyYWQtdWNnZy1nZW5lcmF0ZWQpIiAvPgo8L3N2Zz4=);
+			
+			background: -moz-linear-gradient(top,  #fecd1f 0%, #f9ed32 51%, #fecd1f 99%); /* FF3.6+ */
+			
+			background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#fecd1f), color-stop(51%,#f9ed32), color-stop(99%,#fecd1f)); /* Chrome,Safari4+ */
+			
+			background: -webkit-linear-gradient(top,  #fecd1f 0%,#f9ed32 51%,#fecd1f 99%); /* Chrome10+,Safari5.1+ */
+			
+			background: -o-linear-gradient(top,  #fecd1f 0%,#f9ed32 51%,#fecd1f 99%); /* Opera 11.10+ */
+			
+			background: -ms-linear-gradient(top,  #fecd1f 0%,#f9ed32 51%,#fecd1f 99%); /* IE10+ */
+			
+			background: linear-gradient(to bottom,  #fecd1f 0%,#f9ed32 51%,#fecd1f 99%); /* W3C */
+			
+			filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fecd1f', endColorstr='#fecd1f',GradientType=0 ); /* IE6-8 */
+		
+		    }
+	
+	}
+	
+
+
+ #breadCrumbs{
+	
+	padding:18px 0 0 20px;
+	
+					li{
+					display: inline;
+					
+						a{
+							
+						}
+						
+						a:hover{
+							color: #900;
+						}
+					
+					
+					}
+					li:after{
+					content: " / ";
+					margin: 0 6px;
+					}
+					li:last-child:after {
+   					content: "";
+					}
+ }
+ 
+ #socialMediaShareIcons{
+	 float:right;
+	text-align: right; 
+	padding:18px 45px 0 0;
+	
+	a img:hover{
+	 box-shadow: 0 0 10px rgba(255, 214, 38, 1);
+	 -webkit-box-shadow: 0 0 10px rgba(255, 214, 38, 1); 
+	 -moz-box-shadow: 0 0 10px rgba(255, 214, 38, 1); 	
+	 
+	}
+	
+ }
+	
+	
+}
+
+
+
+
+.coinsBackground{
+	background:url(../images/coins_left.jpg) right bottom no-repeat;
+	height: 550px;	
+	margin-top: 30px;
+	font-family:Georgia, "Times New Roman", Times, serif;
+		font-size: 30px;
+}
+
+.memberLeft{
+	margin:10px;
+	font-size:22px;
+
+	
+}
+
+#leftSide{
+	float:left;
+	width: 300px;
+	text-align:right;
+
+
+	padding-top: 30px;
+
+	
+	p{
+		margin: 20px;	
+	}
+	
+
+
+	
+	.casinoInfo{
+		font-size:18px;
+		text-align: right;
+		font-family: 'MyriadProRegular', @sans;
+		margin: 0 20px;
+		
+		form{
+			
+			ul{
+			font-size:14px;	
+			
+			
+				input{
+					font-size:14px;	
+					width: 210px;
+					text-align: right;
+				}
+				
+				input:focus{
+						border: 1px @topRed solid;
+				}
+			}
+
+		
+			
+		}
+		
+		h1{
+			margin: 10px 0 25px 0;
+			font-size: 22px;
+		}
+		img{
+		border: 1px #eee solid;	
+		}
+		
+		ul{
+		font-size: 18px;
+		list-style:none;
+
+		 li{
+			margin: 3px 0;
+			
+			img{
+			border: 0px #eee solid;	
+			margin: 20px 7px;
+			}
+	 
+		 }
+		 
+		   .webLink{
+			margin-top: 25px; 
+		   }
+			
+		}
+	}
+	
+
+	
+	
+}
+
+		input[type="submit"]{
+		color: #fff;
+		background:#900;	
+		text-transform:uppercase;
+		border: 0;
+		padding:10px 14px;
+		border-radius:8px;
+		}
+
+
+
+#box { .cols(left); text-align: center; text-transform: capitalize; width: @frameSize; height: auto; margin: 50px 0; 
+	.page-header { 
+		small { display: block; font-size: 65%; text-transform: uppercase; margin-top: 5px; }
+	}	
+	.hero-unit p a.btn {
+		/*
+		color: #FFF; text-shadow: none;
+		background-color:#d88148;
+		background-color:#d88148 \9;
+	  background-image: -moz-linear-gradient(top, #d88148, #854419); 
+	  background-image: -ms-linear-gradient(top, #d88148, #854419); 
+	  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#d88148), to(#854419)); 
+	  background-image: -webkit-linear-gradient(top, #d88148, #854419); 
+	  background-image: -o-linear-gradient(top, #d88148, #854419); 
+	  background-image: linear-gradient(top, #d88148, #854419);
+		
+		&:hover { background-color:#854419; }
+		*/
+	}
+}
+
+#shareForm { position: fixed; top: 0; left: 0; width: 100%; height: 100%; z-index: 9999; }
+.alertfiles { position:absolute; top:100px; left:0; background:#4c6d00; color:#FFF; text-align:center; width:100%; padding:20px 0; z-index:999; }
+.class-form { position: relative; background: #FFF; font-family: sans-serif; width: 500px; margin: 1% auto; max-height:580px; border: 4px solid #999;
+
+	h1{
+		background: #900;
+		color: #FFF;
+		font-size: 16px;
+		text-align: left;
+		padding-left: 20px;
+			
+	}
+	
+	.greyInfo{
+		background: #CCC;
+		text-align: center;
+		padding: 10px 0;
+		
+	}
+	
+	.shareBody{
+		 padding: 25px; overflow:auto;
+	}
+
+}
+.class-form { -webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px; }
+
+.clear { clear: both; float: none; display: block; }
+
+.topMargin10{
+margin-top:10px;	
+}
+
+
+.CasinoLogoUpdate{
+	background: #464646;
+	color: #fff;
+	text-transform:uppercase;
+	font-size: 14px;
+	height: 17px;
+	padding-top: 4px;
+	width: 	183px;
+	margin: 0 0 0 74px;
+	text-align:center;	
+	display:block;
+}
+
+a.CasinoLogoUpdate:hover{
+	color: @mainYellow;	
+}
+
+
+#casinoAdmin{
+	
+	
+	input[type="text"],
+	input[type="file"]
+	{
+		margin:4px 0;
+		border: 1px #999 solid;
+		padding: 5px;
+		background: #FFF;
+
+	}
+	input:focus{
+		border: 1px @topRed solid;
+	}
+	
+
+	
+	
+	.deleteX{
+	background: @topRed;
+	border-radius: 10px;
+	padding:1px 4px;
+	color: #FFF;
+	text-decoration:none;
+	font-size:12px;
+	
+	}
+	
+	.uploadPhoto{
+		float:right; 
+		margin-right: 20px; 
+		text-decoration:underline;
+	}
+	.uploadPhotoForm{
+		margin: 0 20px 10px 20px;
+	}
+	
+	.yellowButton{
+		
+	margin-top: 10px;
+	padding: 7px 16px;
+	background: #fcd24a; /* Old browsers */
+	border: solid 2px #edc132;
+	border-radius: 4px;
+	color: #523900;
+	text-transform: uppercase;
+	font-weight:bold;
+	font-size: 14px;
+
+		background: #fbf2d3; /* Old browsers */
+		/* IE9 SVG, needs conditional override of 'filter' to 'none' */
+		background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZiZjJkMyIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNjYWFkNTEiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+		background: -moz-linear-gradient(top,  #fbf2d3 0%, #caad51 100%); /* FF3.6+ */
+		background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#fbf2d3), color-stop(100%,#caad51)); /* Chrome,Safari4+ */
+		background: -webkit-linear-gradient(top,  #fbf2d3 0%,#caad51 100%); /* Chrome10+,Safari5.1+ */
+		background: -o-linear-gradient(top,  #fbf2d3 0%,#caad51 100%); /* Opera 11.10+ */
+		background: -ms-linear-gradient(top,  #fbf2d3 0%,#caad51 100%); /* IE10+ */
+		background: linear-gradient(to bottom,  #fbf2d3 0%,#caad51 100%); /* W3C */
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fbf2d3', endColorstr='#caad51',GradientType=0 ); /* IE6-8 */
+
+		-webkit-box-shadow:  0px 2px 2px 0px rgba(190, 190, 190;
+        box-shadow:  0px 2px 2px 0px rgba(190, 190, 190;
+		text-shadow: 0px 0px 4px #fcfcfc;
+        filter: dropshadow(color=#fcfcfc, offx=0, offy=0);
+		
+	}
+	
+	.yellowButton:hover{
+		color: @topRed;
+		-webkit-box-shadow: 0px 2px 4px 4px @topRed;
+		box-shadow: 0px 2px 4px 4px @topRed; 
+	}
+	
+	.yellowButton:active{
+		-webkit-box-shadow:  0px 0px 0px 0px rgba(190, 190, 190;
+        box-shadow:  0px 0px 0px 0px rgba(190, 190, 190;
+		margin-top: 2px;
+	}
+	
+}
+
+
+@import "-/cssfix.less";
+
+
+
+

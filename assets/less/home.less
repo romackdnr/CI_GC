@@ -1,0 +1,260 @@
+/*--           HOME MODS BY MARK JOSEPH RIVERA - July, 2012                  --*/
+/*-----------------------------------------------------------------------------*/
+
+@import "-/strap.less";
+@import "-/mixin.less";
+
+@topRed: #AA271E;
+@mainYellow: #FBD626;
+
+// DEFAULT SCAFFOLDING
+.wrap { .cols(left); .relative(); width: @maxWidth; margin: 0;
+	&.header { height: 86px; background-color: @topRed;  }
+	&.footer { background: @topRed; height: 100px; }
+	&.home   { background: url(../images/home_slot_machine_banner_low.jpg) no-repeat center top #000;  }
+}
+
+	
+#main{
+	.relative(); width: @frameSize; margin: 0 auto; padding:0;
+	}
+
+
+header, footer, { .relative(); width: @frameSize; margin: auto; }
+header { height: 86px; 
+	
+	}
+	#hdr-logo:before {  line-height: 100px; z-index: 1; }
+
+
+footer { font-weight: 100; color: #fff; text-align: center; padding: 10px 0; 
+	a { font-weight: 100; }
+	a[copyright] { color: #fff; }
+	a[signature] { font-size: @baseFontSize - 2; color: #fff; }
+	a:hover { border-bottom: solid 1px #FF0; color:#FF0; }
+}
+
+
+
+@import "-/menu.less";
+@import "-/font.less";
+@import "-/class.less";
+
+
+// CASUAL STYLES CONFIGURATION
+
+a { color: @gray;
+	&:hover { color: @grayLight; }
+	&:focus, &:active { color: @orange; outline: 0; }
+}
+
+
+//## CONTENTS CONFIGURATION ##//
+
+#GCLogo{
+	float:left;
+	margin: -105px 0 0 30px;
+	position: static;
+	}
+
+#box {  
+	text-align: center; 
+	text-transform: capitalize;
+	height: 462px; 
+	width: 450px;
+	margin:30px 0 0 500px;	
+	color: #fff;
+
+
+
+	.page-header { 
+	
+		color: #ffc61c;
+		font-family:Georgia, "Times New Roman", Times, serif;
+		height: 40px;
+		text-transform: uppercase;
+		font-weight:bold;
+		padding-bottom: 20px; 
+		margin: 20px 0;
+		
+			.titleLeft{
+				width: 150px;
+				text-align: right;
+				float:left;
+				font-size: 26px;
+				margin-top:6px;
+			}
+			
+			.titleRight{
+				width: 260px;
+				float: left;	
+				text-align:left;
+				font-size: 66px;
+				margin-left: 10px;
+			}
+	
+	
+		small { display: block; font-size: 65%; text-transform: uppercase; margin-top: 5px; }
+	}	
+	
+
+	.slotInfo  {
+      height: 215px;
+	  	  
+		  ul{
+			margin-bottom: 45px;    
+			  
+			li{
+			  padding: 8px;
+			  margin:8px;
+			  list-style:none;
+			  text-align:left;
+			  border-bottom: solid 1px #333333;
+
+		      a{
+			  color: #FFF;	
+			  
+				  img{
+					float:left;  
+				  }			  
+				  .slotDetails{
+					margin: 2px 0 0 100px;  
+					font-size: 16px;
+					line-height: 20px;
+				  }
+			  }
+			  
+			  a:hover{
+			  		img{
+					 box-shadow: 0 0 16px rgba(255, 214, 38, 1);
+					 -webkit-box-shadow: 0 0 16px rgba(255, 214, 38, 1); 
+					 -moz-box-shadow: 0 0 16px rgba(255, 214, 38, 1); 	
+				  }
+			  }
+						
+			}
+		  }
+	} /* close .slotInfo */
+}
+
+
+#mainGoldBoxes{
+	background-color:#FFFFFF;
+	border-top: solid 8px #ababab;
+	
+
+ #goldBoxeSpace{
+	height: 280px;
+	margin:auto;
+	width: 980px;
+	
+	
+	.goldBox:hover{
+				-webkit-box-shadow:  0px 0px 4px 1px #FBD626;
+            box-shadow:  0px 0px 4px 1px #FBD626;	
+	}
+	
+	.goldBox{
+		width: 225px;
+		height: 186px;
+		border: 2px solid #f4d880;
+		border-radius: 12px;
+		margin: 30px 7px 0 7px;
+		float:left;
+		
+		a{
+		    color: #000;	
+		}
+		
+		a:hover{
+			color: #000;	
+		}
+		
+		
+		
+		.title{
+			font-size: 16px;
+			line-height: 10px;
+			font-family: Arial, Helvetica, sans-serif;
+			height: 24px;
+			padding-top: 14px;
+			text-indent: 16px;
+			border-radius: 6px;
+			border: solid 1px #f0c948;
+			margin: -5px 0 25px 0;
+			width: 226px;
+			float:left;
+			
+			background: #fec940; /* Old browsers */
+
+			/* IE9 SVG, needs conditional override of 'filter' to 'none' */
+			
+			background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZlYzk0MCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjUxJSIgc3RvcC1jb2xvcj0iI2Y5ZWQzMiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNmZWM5NDAiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+			
+			background: -moz-linear-gradient(top,  #fec940 0%, #f9ed32 51%, #fec940 100%); /* FF3.6+ */
+			
+			background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#fec940), color-stop(51%,#f9ed32), color-stop(100%,#fec940)); /* Chrome,Safari4+ */
+			
+			background: -webkit-linear-gradient(top,  #fec940 0%,#f9ed32 51%,#fec940 100%); /* Chrome10+,Safari5.1+ */
+			
+			background: -o-linear-gradient(top,  #fec940 0%,#f9ed32 51%,#fec940 100%); /* Opera 11.10+ */
+			
+			background: -ms-linear-gradient(top,  #fec940 0%,#f9ed32 51%,#fec940 100%); /* IE10+ */
+			
+			background: linear-gradient(to bottom,  #fec940 0%,#f9ed32 51%,#fec940 100%); /* W3C */
+			
+			filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fec940', endColorstr='#fec940',GradientType=0 ); /* IE6-8 */
+
+
+
+			img{
+				margin: -30px 0 0 -6px;
+				float:left;
+				
+			}
+		}
+		
+		
+		.goldBoxContent{
+			margin: 0 18px;
+			
+
+			ul{
+				margin:0 0 10px 0;
+				
+			 li{
+				float:left;
+				list-style:none; 
+			    display:inline-block;
+				font-size: 11px;
+				line-height: 16px;	
+				color: #333;
+				overflow:hidden;
+			 }
+			
+			 li.jAmount{
+				 width: 65px
+			 }
+			 li.jCasino{
+				 width: 115px
+			 }
+			 
+			 li.jName{
+				 margin: 0 0 10px 65px;
+				 width: 135px;
+			 }
+				
+			}
+		}
+		
+		
+		
+	}
+ }
+}
+
+@import "-/cssfix.less";
+
+
+
+

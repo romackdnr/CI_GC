@@ -1,0 +1,126 @@
+/*--           STRAP MODS BY MARK JOSEPH RIVERA - July, 2012                 --*/
+/*-----------------------------------------------------------------------------*/
+
+
+// DEFAULT COLORS
+@black							: #000;
+@white							: #FFF;
+
+@grayLighter				: #EEE;
+@grayLight					: #CCC;
+@gray								: #555;
+@grayDark						: #333;
+@grayDarker					: #111;
+
+@blue								: #049CDB;
+@blueDark						: #0064CD;
+@green							: #46A546;
+@red								: #9D261D;
+@yellow							: #FFC40D;
+@orange							: #F89406;
+@pink								: #C3325F;
+@purple							: #7A43B6;
+
+@baseColor					: @gray - 111;
+@baseLink						: #08C;
+@baseHover					: darken(@baseLink, 15%);
+
+
+// DEFAULT FRAME SIZE
+@maxWidth						: 100%;
+@minWidth						: 1%;
+@maxHeight					: 100%;
+@minHeight					: 1%;
+
+@frameSize					: 980px;
+
+
+// DEFAULT TYPOGRAPHY
+@sans								: sans-serif;
+@serif							: serif;
+
+@baseSize						: 100%;
+@baseFontSize				: 13px;
+@baseLineHeight			: 18px;
+
+
+// DEFAULT MENU NAVIGATION
+@mnURL							: "../images/mn/menunav.jpg";
+@mnWidth						: 980px;
+@mnHeight						: 50px;
+
+@mnSubBG						: fade(@black, 50%);
+@mnSubColor					: @white;
+@mnSubHover					: fade(@black, 75%);
+@mnSubColorHover		: @white;
+@mnParent						: 180px;
+
+@mnX1								: 100px;
+  @mnX1Gutter				: 0;
+  @mnX1Left					: @mnX1Gutter;
+  @mnX1Position			: @mnX1Left;
+
+@mnX2								: 100px;
+	@mnX2Gutter				: 0;
+	@mnX2Left					: @mnX1 + @mnX1Position + @mnX2Gutter;
+	@mnX2Position			: @mnX2Left;
+
+@mnX3								: 100px;
+	@mnX3Gutter				: 0;
+	@mnX3Left					: @mnX2 + @mnX2Position + @mnX3Gutter;
+	@mnX3Position			: @mnX3Left;
+
+@mnX4								: 100px;
+	@mnX4Gutter				: 0;
+	@mnX4Left					: @mnX3 + @mnX3Position + @mnX4Gutter;
+	@mnX4Position			: @mnX4Left;
+
+@mnX5								: 100px;
+	@mnX5Gutter				: 0;
+	@mnX5Left					: @mnX4 + @mnX4Position + @mnX5Gutter;
+	@mnX5Position			: @mnX5Left;
+
+
+// DEFAULT FORM STYLE
+@formBody						: 100%;
+@formGutter					: 1%;
+@form2Cols					: 100% / 2;
+
+@formError					: #BF4804;
+@formErrorSlider		: @formError;
+
+
+// DEFAULT BUTTON STYLE
+@btnBackground										: @white;
+@btnBackgroundHighlight						: darken(@white, 10%);
+@btnBorder												: #ccc;
+
+@btnPrimaryBackground							: @baseLink;
+@btnPrimaryBackgroundHighlight		: spin(@btnPrimaryBackground, 15%);
+
+@btnInfoBackground								: #5bc0de;
+@btnInfoBackgroundHighlight				: #2f96b4;
+
+@btnSuccessBackground							: #62c462;
+@btnSuccessBackgroundHighlight		: #51a351;
+
+@btnWarningBackground							: lighten(@orange, 15%);
+@btnWarningBackgroundHighlight		: @orange;
+
+@btnDangerBackground							: #ee5f5b;
+@btnDangerBackgroundHighlight			: #bd362f;
+
+@btnInverseBackground							: @gray;
+@btnInverseBackgroundHighlight		: @grayDarker;
+
+
+// DEFAULT HERO-UNIT STYLE
+@heroUnitBackground								: @grayLighter;
+@heroUnitHeadingColor							: inherit;
+@heroUnitLeadColor								: inherit;
+
+
+// DEFAULT SPRITES PATH
+@iconSpritePath										: "../images/ico/glyphicons-halflings.png";
+@iconWhiteSpritePath							: "../images/ico/glyphicons-halflings-white.png";
+

@@ -1,0 +1,133 @@
+/*--           MENU MODS BY MARK JOSEPH RIVERA - July, 2012                  --*/
+/*-----------------------------------------------------------------------------*/
+
+
+/*
+nav[menunav] { .absolute(); top: 0; right: -40px; background: url(@mnURL) no-repeat; width: @mnWidth; height: @mnHeight; margin: 0;
+	ul { position: absolute; top: 0; list-style: none; min-height: @mnHeight; margin: 0;
+		a, span { display: block; cursor: pointer; height: @mnHeight;
+			&:hover, &.on { background-image: url(@mnURL); }
+		}
+		ul { position: absolute; top: @mnHeight; left: 0; display: none; }
+	}
+	li { 
+		&:hover ul { display: block; width: auto; margin: 0; padding: 0; 
+			li:hover { position: relative; }
+			li a { 
+				display: block; 
+				background: @mnSubBG; 
+				font: 11px sans-serif; 
+				color: @mnSubColor; 
+				text-transform: uppercase; 
+				height: auto; 
+				padding: 10px; 
+				border: solid transparent; border-width: 0 0 1px 0; 
+			
+				*min-height: 15px; _height: 15px;
+				
+				&:hover { background: @mnSubHover; color: @mnSubColorHover; }
+			}
+		}
+		span { cursor: pointer; text-indent: -999em; }
+	}
+	
+	.parent li { width: @mnParent; 
+		.child { position: relative; top: 0; display: block; width: auto; height: auto;
+			li { text-indent: 15px; }
+			 a { font-size: 10px; font-weight: 100; padding: 5px; } 
+		}
+	}
+	
+	.mn1, .mn1 span { left: @mnX1Left; width: @mnX1;
+		&:hover, &.on { background-position: -@mnX1Position -@mnHeight; }
+	}
+	.mn2, .mn2 a { left: @mnX2Left; width: @mnX2;
+		&:hover, &.on { background-position: -@mnX2Position -@mnHeight; }
+	}
+	.mn3, .mn3 a { left: @mnX3Left; width: @mnX3;
+		&:hover, &.on { background-position: -@mnX3Position -@mnHeight; }
+	}
+	.mn4, .mn4 a { left: @mnX4Left; width: @mnX4;
+		&:hover, &.on { background-position: -@mnX4Position -@mnHeight; }
+	}
+	.mn5, .mn5 a { left: @mnX5Left; width: @mnX5;
+		&:hover, &.on { background-position: -@mnX5Position -@mnHeight; }
+	}
+}
+*/
+
+
+nav[menunav]{ float: right; background: transparent; width: auto;
+	ul { list-style: none; line-height: 30px; width: auto; margin: 10px 20px 0 0;
+	
+		li { display: inline; color: #fff; margin-right: 10px; font-family: Arial, Helvetica, sans-serif;  font-weight: 100; font-size: 16px;
+		}
+		
+			a {
+			color: #cacaca; 
+			padding: 16px 10px 10px 10px; 
+			border-bottom-left-radius: 6px;
+			border-bottom-right-radius: 6px;
+			background: #000; /* Old browsers */			
+			
+			}
+		
+			.selected, a:hover{
+				color: #fbd626;
+			border-bottom-left-radius: 6px;
+			border-bottom-right-radius: 6px;
+			
+				background: #aa271e; /* Old browsers */
+
+				/* IE9 SVG, needs conditional override of 'filter' to 'none' */
+				
+				background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2FhMjcxZSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9Ijk5JSIgc3RvcC1jb2xvcj0iIzg1MWMxNSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgPC9saW5lYXJHcmFkaWVudD4KICA8cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMSIgaGVpZ2h0PSIxIiBmaWxsPSJ1cmwoI2dyYWQtdWNnZy1nZW5lcmF0ZWQpIiAvPgo8L3N2Zz4=);
+				
+				background: -moz-linear-gradient(top,  #aa271e 0%, #851c15 99%); /* FF3.6+ */
+				
+				background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#aa271e), color-stop(99%,#851c15)); /* Chrome,Safari4+ */
+				
+				background: -webkit-linear-gradient(top,  #aa271e 0%,#851c15 99%); /* Chrome10+,Safari5.1+ */
+				
+				background: -o-linear-gradient(top,  #aa271e 0%,#851c15 99%); /* Opera 11.10+ */
+				
+				background: -ms-linear-gradient(top,  #aa271e 0%,#851c15 99%); /* IE10+ */
+				
+				background: linear-gradient(to bottom,  #aa271e 0%,#851c15 99%); /* W3C */
+				
+				filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#aa271e', endColorstr='#851c15',GradientType=0 ); /* IE6-8 */
+
+
+
+			
+			}	
+			
+			
+	}
+}
+
+
+#topRightSign { float: right; background: transparent; width: auto;
+	ul { list-style: none; line-height: 30px; width: auto; margin: 0;
+	
+		li { display: inline; color: #fff; margin-left: 10px; text-transform: uppercase; font-family: Arial, Helvetica, sans-serif;  font-weight: bold; font-size: 12px;
+		}
+		
+			a {
+			color: #fff; 
+			padding: 8px 35px; 
+			}
+		
+			.selected, a:hover{
+				color: #AA271E;
+			background: #fff;
+			border-bottom-left-radius: 6px;
+			border-bottom-right-radius: 6px;
+
+			
+			}	
+			
+			
+	}
+}
+
